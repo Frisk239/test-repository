@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In &mdash; Parking Lot</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="card" role="main">
+        <h1 class="title">Parking Lot</h1>
+        <p class="subtitle">Sign in to manage the parking lot.</p>
+
+        <form id="login-form" novalidate>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" autocomplete="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+            <p id="form-error" class="error" role="alert" hidden></p>
+
+            <button type="submit" id="sign-in">Sign In</button>
+        </form>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>
